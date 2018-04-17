@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        
+<!--          <h:form>
+              <p:dataTable value="#{Search.personList}" var="person">
+                <p:column headerText="İsim">
+                    <h:outputText value="#{person.ad}" />
+                </p:column>
+
+                <p:column headerText="Soyisim">
+                    <h:outputText value="#{person.soyad}"/>
+                </p:column>
+                  <p:column headerText="Adres">
+                      <h:outputText value="#{person.adres}"/>
+                </p:column>
+                  <p:column headerText="İletişim">
+                      <h:outputText value="#{person.mail}"/>
+                </p:column>
+                  <p:column headerText="Telefon">
+                      <h:outputText value="#{person.telefon}"/>
+                </p:column>
+              </p:dataTable>
+             
+         <p:commandButton action="index.xhtml?faces-redirect=true" value="Geri Dön"/>
+        </h:form>-->
+
+<p:accordionPanel>
+    <c:forEach items="#{Search.personList}" var="person">
+        <p:tab title="#{person.ad} #{person.soyad}">
+            <div style="color:red;">
+            <h:outputText value="İsim Bilgileri : #{person.ad} #{person.soyad}"></h:outputText>
+            </div>
+            <div>
+            <h:outputText value="Adres Bilgisi : #{person.adres}"></h:outputText>
+            </div>
+            <div>
+                <h:outputText value="Mail Adresi : #{person.mail}"></h:outputText>
+            </div>
+            
+            <div>
+                <h:outputText value="Telefon: :#{person.telefon}"></h:outputText>
+            </div>
+</p:tab>
+</c:forEach>
+</p:accordionPanel>
+        
+    </h:body>
+</html>
+
