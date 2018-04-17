@@ -32,29 +32,29 @@ Kuruluma geçmeden şunların kurulu olduğundan emin olun!
 * Not : Netbeans IDE 8.2'de geliştirilmiştir.
 
 
-1- Proje dosyalarını kendi bilgisayarımıza yüklüyoruz.
+1. Proje dosyalarını kendi bilgisayarımıza yüklüyoruz.
 
 ```sh
 $ git clone https://github.com/srdrmtl/KanBagisiApp.git
 ```
 
-2- Netbeans'i açıp "open project" diyerek projemizi NetBeans'e ekliyoruz.
+2. Netbeans'i açıp "open project" diyerek projemizi NetBeans'e ekliyoruz.
 
-3- Localhosta bağlanıp veritabanımızı oluşturuyoruz
+3. Localhosta bağlanıp veritabanımızı oluşturuyoruz
 ```sh
 $ localhost/phpmyadmin
 $ Oluşturmamız gereken veritabanı ismi "calisma" 
 ```
 
-4 - Veritabanımızı oluşturduktan sonra "içeri aktar" seçeneği ile 
+4. Veritabanımızı oluşturduktan sonra "içeri aktar" seçeneği ile 
 ```sh
 $ calisma.sql
 ```
 dosyasını seçip içeri aktarıyoruz. Tablolarımız artık oluştu.
-5 - (NetBeans İçin ) Netbeans açıldıktan sonra sol tarafta services sekmesine tıklayıp Databases'e sağ tıklıyoruz. 
-5.1 (NetBeans İçin) "New Connection" Tıklıyoruz.Driver olarak MySQL(Connector/JDriver) seçip next diyoruz.
-5.2(NetBeans İçin) Açılan ekranda Database kısmına "calisma" yazıyoruz. Diğer bilgileride doldurup Next-Next-Finish yapıyoruz.
-6 - Aşağıda gördüğünüz gibi src->main->resource->persistence.xml dosyasını açıp gerekli değişikleri yapıyoruz.
+5. (NetBeans İçin ) Netbeans açıldıktan sonra sol tarafta services sekmesine tıklayıp Databases'e sağ tıklıyoruz. 
+5.1. (NetBeans İçin) "New Connection" Tıklıyoruz.Driver olarak MySQL(Connector/JDriver) seçip next diyoruz.
+5.2. (NetBeans İçin) Açılan ekranda Database kısmına "calisma" yazıyoruz. Diğer bilgileride doldurup Next-Next-Finish yapıyoruz.
+6. Aşağıda gördüğünüz gibi src->main->resource->persistence.xml dosyasını açıp gerekli değişikleri yapıyoruz.
 ![N|Solid](http://resimag.com/p1/c30b9af64b.png)
 ```sh
 $ <properties>
@@ -67,3 +67,20 @@ $</properties>
 7. Yukardaki değişiklikleri yaptıktan sonra persistence.xml Design kısmına girip "Data Source: oluşturduğumuz JDBC Server"  seçmeyi unutmayınız.
 8. Mail sunucusu ile ilgili bilgileri SendMail() fonksiyonu altından doldurabilirsiniz.
 9. Yukardaki işlemleri sorunsuz yaptığınız zaman uygulamamız çalışacaktır.
+10. Veritabanında kayıtlı kullanıcı bilgileri---> mail : serdarmutlu006@gmail.com şifre:1234
+## Uygulamadan Bazı Görüntüler
+*Ana Ekran
+![N|Solid](http://resimag.com/p1/0e31d13238.png)
+* Giriş Ekranı
+![N|Solid](http://resimag.com/p1/7b2916de29.png)
+*Şifremi Unuttum Ekranı
+![N|Solid](http://resimag.com/p1/817c22fd41.png)
+* Kayıt Ekranı
+![N|Solid](http://resimag.com/p1/8945cd83dc.png)
+*Kullanıcı Paneli Ekranı
+![N|Solid](http://resimag.com/p1/22c9573566.png)
+*Arama Sonrası Gösterilen Ekran
+![N|Solid](http://resimag.com/p1/db2485db56.png)
+
+
+
