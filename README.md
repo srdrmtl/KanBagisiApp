@@ -51,11 +51,27 @@ $ Oluşturmamız gereken veritabanı ismi "calisma"
 $ calisma.sql
 ```
 dosyasını seçip içeri aktarıyoruz. Tablolarımız artık oluştu.
-5. (NetBeans İçin ) Netbeans açıldıktan sonra sol tarafta services sekmesine tıklayıp Databases'e sağ tıklıyoruz. 
+
+
+5. (NetBeans İçin ) Netbeans açıldıktan sonra sol tarafta services sekmesine tıklayıp Databases'e sağ tıklıyoruz.
+
+
+
 5.1. (NetBeans İçin) "New Connection" Tıklıyoruz.Driver olarak MySQL(Connector/JDriver) seçip next diyoruz.
+
+
+
 5.2. (NetBeans İçin) Açılan ekranda Database kısmına "calisma" yazıyoruz. Diğer bilgileride doldurup Next-Next-Finish yapıyoruz.
+
+
+
+
 6. Aşağıda gördüğünüz gibi src->main->resource->persistence.xml dosyasını açıp gerekli değişikleri yapıyoruz.
+
+
 ![N|Solid](http://resimag.com/p1/c30b9af64b.png)
+
+
 ```sh
 $ <properties>
 $       <property name="jdbc urlnizi gireceksiniz"/>
@@ -65,8 +81,11 @@ $       <property name="javax.persistence.jdbc.password" value="localhost şifre
 $</properties>
 ```
 7. Yukardaki değişiklikleri yaptıktan sonra persistence.xml Design kısmına girip "Data Source: oluşturduğumuz JDBC Server"  seçmeyi unutmayınız.
+
 8. Mail sunucusu ile ilgili bilgileri SendMail() fonksiyonu altından doldurabilirsiniz.
+
 9. Yukardaki işlemleri sorunsuz yaptığınız zaman uygulamamız çalışacaktır.
+
 10. Veritabanında kayıtlı kullanıcı bilgileri---> mail : serdarmutlu006@gmail.com şifre:1234
 ## Uygulamadan Bazı Görüntüler
 *Ana Ekran
